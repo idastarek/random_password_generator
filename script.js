@@ -8,8 +8,6 @@ let passEl2 = document.getElementById("pass-el-2")
 
 function generatePasswords() {
     console.log("Clicked button");
-    let randomIndex1 = Math.floor(Math.random()*characters.length);
-    let randomIndex2 = Math.floor(Math.random()*characters.length);
     if (passEl1.textContent == "" && passEl2.textContent == "") {
         console.log("Empty password divs");
         for (i=0; i<=15; i++){
