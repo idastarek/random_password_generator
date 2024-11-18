@@ -3,14 +3,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 
 let buttonEl = document.getElementById("btn-el");
-let passEl1 = document.getElementById("pass-el-1")
-let passEl2 = document.getElementById("pass-el-2")
+let passEl1 = document.getElementById("pass-el-1");
+let passEl2 = document.getElementById("pass-el-2");
+
 
 function generatePasswords() {
     console.log("Clicked button");
+    let lengthInput = Number(document.getElementById("password-length").value);
     if (passEl1.textContent == "" && passEl2.textContent == "") {
         console.log("Empty password divs");
-        for (i=0; i<=15; i++){
+        for (i=0; i<=lengthInput-1; i++){
             passEl1.textContent += characters[Math.floor(Math.random()*characters.length)];
             passEl2.textContent += characters[Math.floor(Math.random()*characters.length)];
         } 
@@ -18,7 +20,7 @@ function generatePasswords() {
         console.log("Passwords already generated")
         passEl1.textContent = "";
         passEl2.textContent = "";
-        for (i=0; i<=15; i++) {
+        for (i=0; i<=lengthInput; i++) {
             passEl1.textContent += characters[Math.floor(Math.random()*characters.length)];
             passEl2.textContent += characters[Math.floor(Math.random()*characters.length)];
         }
