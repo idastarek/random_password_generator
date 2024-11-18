@@ -33,6 +33,25 @@ h3 {
     margin: 10px 0 40px 0;
 }
 
+#label-el {
+    font-family: "Inter", sans-serif;
+    color: #D5D4D8;
+    margin-right: 10px;
+}
+
+#password-length {
+    background: #303F55;
+    border: none;
+    color: #ffffff;
+    min-width: 80px;
+    text-align: center;
+    min-height: 25px;
+}
+
+#password-length:focus {
+    outline: 4px solid #50698E;
+}
+
 #btn-el {
     font-family: "Inter", sans-serif;
     font-weight: 500;
