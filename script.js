@@ -9,7 +9,15 @@ let passEl2 = document.getElementById("pass-el-2");
 
 function generatePasswords() {
     console.log("Clicked button");
+    // Get the password length from the input field
     let lengthInput = Number(document.getElementById("password-length").value);
+    
+    // Validate the length
+    if (!lengthInput || lengthInput < 5 || lengthInput > 25) {
+        alert("Please set the password length between 5 and 25.");
+        return
+    }
+
     if (passEl1.textContent == "" && passEl2.textContent == "") {
         console.log("Empty password divs");
         for (i=0; i<=lengthInput-1; i++){
