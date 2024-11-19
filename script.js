@@ -18,21 +18,15 @@ function generatePasswords() {
         return
     }
 
-    if (passEl1.textContent == "" && passEl2.textContent == "") {
-        console.log("Empty password divs");
-        for (i=0; i<=lengthInput-1; i++){
-            passEl1.textContent += characters[Math.floor(Math.random()*characters.length)];
-            passEl2.textContent += characters[Math.floor(Math.random()*characters.length)];
-        } 
-    } else {
-        console.log("Passwords already generated")
-        passEl1.textContent = "";
-        passEl2.textContent = "";
-        for (i=0; i<=lengthInput; i++) {
-            passEl1.textContent += characters[Math.floor(Math.random()*characters.length)];
-            passEl2.textContent += characters[Math.floor(Math.random()*characters.length)];
-        }
-    }
+    // Clear the password elements before generation
+    passEl1.textContent = "";
+    passEl2.textContent = "";
+
+    // Generate passwords based on the provided length
+    for (i=0; i<=lengthInput-1; i++){
+        passEl1.textContent += characters[Math.floor(Math.random()*characters.length)];
+        passEl2.textContent += characters[Math.floor(Math.random()*characters.length)];
+    } 
     
 }
 
