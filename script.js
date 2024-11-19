@@ -2,16 +2,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
-let buttonEl = document.getElementById("btn-el");
-let passEl1 = document.getElementById("pass-el-1");
-let passEl2 = document.getElementById("pass-el-2");
+const buttonEl = document.getElementById("btn-el");
+const passEl1 = document.getElementById("pass-el-1");
+const passEl2 = document.getElementById("pass-el-2");
 
 
 function generatePasswords() {
     console.log("Clicked button");
-    
+
     // Get the password length from the input field
-    let lengthInput = Number(document.getElementById("password-length").value);
+    const lengthInput = Number(document.getElementById("password-length").value);
     
     // Validate the length
     if (!lengthInput || lengthInput < 5 || lengthInput > 25) {
