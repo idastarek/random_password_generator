@@ -27,3 +27,14 @@ function generatePasswords() {
     }
     
 }
+
+function clickAndCopy(divId) {
+    const divContent = document.getElementById(divId).textContent;
+    navigator.clipboard.writeText(divContent)
+        .then(() => {
+            alert("Copied password");
+        })
+        .catch(() => {
+            alert("Failed to copy password");
+        });
+}
