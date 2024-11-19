@@ -30,6 +30,7 @@ function generatePasswords() {
     
 }
 
+// Copy to clipboard  
 function clickAndCopy(divId) {
     const divContent = document.getElementById(divId).textContent;
     navigator.clipboard.writeText(divContent)
