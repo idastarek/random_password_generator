@@ -11,6 +11,7 @@ body {
     align-content: center;
 }
 
+/* title */
 h1 {
     font-family: "Karla", serif;
     font-weight: 800;
@@ -25,6 +26,7 @@ span {
     color: #10B981;
 }
 
+/* subtitle */
 h2 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -33,12 +35,14 @@ h2 {
     margin: 10px 0 40px 0;
 }
 
+/* password length label  */
 #label-el {
     font-family: "Inter", sans-serif;
     color: #D5D4D8;
     margin-right: 10px;
 }
 
+/* password length input */
 #password-length {
     background: #303F55;
     border: none;
@@ -52,6 +56,7 @@ h2 {
     outline: 4px solid #50698E;
 }
 
+/* generate passwords button */
 #btn-el {
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -63,6 +68,7 @@ h2 {
     border-radius: 8px;
 }
 
+/* passwords divs container */
 #passwords-el {
     border-top: 0.1px solid #D5D4D8;
     margin-top: 40px;
@@ -74,6 +80,7 @@ h2 {
     
 }
 
+/* each password div */
 .password-el {
     font-family: "Inter", sans-serif;
     font-weight: 600;
