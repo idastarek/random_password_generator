@@ -9,6 +9,7 @@ let passEl2 = document.getElementById("pass-el-2");
 
 function generatePasswords() {
     console.log("Clicked button");
+    
     // Get the password length from the input field
     let lengthInput = Number(document.getElementById("password-length").value);
     
